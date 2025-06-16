@@ -1,0 +1,128 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: transparent;
+  transition: background-color 0.4s ease;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav-links li a:hover {
+  background-color: #fff;
+  color: #0077cc;
+}
+
+.scrolled {
+  background-color: #003f7d;
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  padding: 140px 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.home-section {
+  background-color: #0077cc; /* Light blue */
+}
+
+.about-section {
+  background-color: #005fa3; /* Medium blue */
+}
+
+.services-section {
+  background-color: #004080; /* Deep blue */
+}
+
+.contact-section {
+  background-color: #002b5c; /* Dark blue */
+}
+
+.content {
+  max-width: 700px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  text-align: left;
+  margin-top: 1rem;
+  padding-left: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #004080;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #e0f0ff;
+  color: #002b5c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
